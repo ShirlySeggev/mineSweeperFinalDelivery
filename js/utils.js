@@ -35,3 +35,16 @@ function changeBottonsStyle(elButton) {
         }
     }
 }
+
+function changeHintStyle(elHint) {
+    elHint.style.backgroundColor = '#7E7E7E';
+    elHint.style.borderWidth = '0px';
+}
+
+function initHintStyle() {
+    var elHints = document.querySelectorAll('.hint');
+    for (var i = 0; i < elHints.length; i++) {
+        elHints[i].style.backgroundColor = 'white';
+        elHints[i].style.borderWidth = '3px';
+    }
+}
