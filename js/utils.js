@@ -4,20 +4,6 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function getEmptyCells(board) {
-    var emptyCells = [];
-    for (var i = 0; i < board.length; i++) {
-        for (var j = 0; j < board[0].length; j++) {
-            var currCellPos = { i, j };
-            var currCell = board[i][j];
-            if (!currCell.isMine) {
-                emptyCells.push(currCellPos);
-            }
-        }
-    }
-    return emptyCells;
-}
-
 function renderElement(el, value) {
     var elElement = document.querySelector(el);
     elElement.innerText = value;
@@ -36,9 +22,9 @@ function changeBottonsStyle(elButton) {
     }
 }
 
-function changeHintStyle(elHint) {
-    elHint.style.backgroundColor = '#7E7E7E';
-    elHint.style.borderWidth = '0px';
+function changeButtonStyle(elButton) {
+    elButton.style.backgroundColor = '#7E7E7E';
+    elButton.style.borderWidth = '0px';
 }
 
 function initHintStyle() {
@@ -47,4 +33,23 @@ function initHintStyle() {
         elHints[i].style.backgroundColor = 'white';
         elHints[i].style.borderWidth = '3px';
     }
+}
+
+function sortScoresByLevel(scores) {
+    scores.sort(function (a, b) {
+        return a.level - b.level
+    });
+}
+
+function changeElementDisplay(el, display) {
+    var elElement = document.querySelector(el);
+    elElement.style.display = display;
+}
+
+function initManuallyStyle() {
+    var elManual = document.querySelector('.manual');
+    elManual.style.backgroundColor = 'white';
+    elManual.style.borderWidth = '3px';
+    changeElementDisplay('.manual-count', 'none');
+    changeElementDisplay('.manual-text', 'none');
 }

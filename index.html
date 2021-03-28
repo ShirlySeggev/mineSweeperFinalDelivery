@@ -18,8 +18,14 @@
     </div>
 
     <div class="mines-count">Mines:<span></span></div>
-    <button class="smile" onclick="playAgain()">😃</button>
+    <div class="the-smile">
+        <button class="smile" onclick="playAgain()">😃</button>
+    </div>
     <div class="timer">0</div>
+
+    <div class="the-undo">
+        <button class="undo" onclick="undo()">UNDO</button>
+    </div>
 
     <table>
         <tbody class="board">
@@ -35,10 +41,23 @@
     </div>
 
     <div class="all-hints">
-        <button class="hint hint1" onclick="revealHint(this)">🖐️</button>
-        <button class="hint hint2" onclick="revealHint(this)">🖐️</button>
-        <button class="hint hint3" onclick="revealHint(this)">🖐️</button>
+        <button class="hint" onclick="revealHint(this)">🖐️</button>
+        <button class="hint" onclick="revealHint(this)">🖐️</button>
+        <button class="hint" onclick="revealHint(this)">🖐️</button>
     </div>
+
+    <div class="best-scores">
+        <div class="begginer-score">🥉Begginer best time: <span></span></div>
+        <div class="medium-score">🥈Medium best time: <span></span></div>
+        <div class="expert-score"> 🥇Expert best time: <span></span></div>
+    </div>
+
+    <button class="safe-click" onclick="safeClick()">Safe Click</button>
+    <div class="safe">Clicks available:<span>3</span></div>
+
+    <button class="manual" onclick="manualClick(this)">Manually create</button>
+    <div class="manual-count">Mines left:<span></span></div>
+    <div class="manual-text">Now you can play!</div>
 
     <script src="js/utils.js"></script>
     <script src="js/game.js"></script>

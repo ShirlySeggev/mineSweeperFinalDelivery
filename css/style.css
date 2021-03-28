@@ -24,7 +24,8 @@ body {
 .mines-count {
     width: 120px;
     height: 60px;
-    top: 60px;
+    /* top: 60px; */
+    top: 30px;
     margin: 1px;
     text-align: center;
     position: relative;
@@ -44,7 +45,8 @@ body {
     width: 120px;
     height: 60px;
     left: 90px;
-    bottom:60px;
+    bottom:90px;
+    /* bottom:60px; */
     font-size: 25px;
     position: relative;
     margin-left: auto;
@@ -60,6 +62,8 @@ body {
 table{
     margin-left: auto;
     margin-right: auto;
+    margin-top: -50px;
+    margin-bottom: auto;
     font-weight: bold;
 }
 
@@ -69,8 +73,8 @@ table{
     font-size: 20px;
     background-color: #AAAAAA;
     color: #464646;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 10%;
 }
 
@@ -85,6 +89,14 @@ table{
     font-size: 20px;
 }
 
+.the-smile{
+    bottom:30px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .smile{
     border-width:0px ;
     border-style: solid;
@@ -107,7 +119,7 @@ table{
     position: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: auto;
     background-color: #F44336;
     align-items: center; 
@@ -145,4 +157,84 @@ table{
     border-style: solid;
     border-color:  #464646;
 }
+
+
+.best-scores{
+    top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top:auto;
+    position: absolute;
+    font-size: 20px;
+    text-align: left;
+}
+
+.safe-click{
+    margin-top:20px;
+    height:30px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-width:3px ;
+    border-style: solid;
+    border-color:  #464646;
+}
+
+.safe{
+    color: white;
+}
+
+.safe span{
+    font-weight: bold;
+}
+
+.manual{
+    margin-top:20px;
+    height:30px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-width:3px ;
+    border-style: solid;
+    border-color:  #464646;
+}
+
+.manual-count{
+    color: white;
+    display: none;
+}
+
+.manual-count span{
+    font-weight: bold;
+}
+
+.manual-text{
+    font-weight: bold;
+    color: white;
+    display: none;
+}
+
+.undo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    height:30px;
+    font-size: 20px;
+    border-width:3px ;
+    border-color:  #464646;
+}
+
+.the-undo{
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top:auto;
+    position: absolute;
+}
+
 
